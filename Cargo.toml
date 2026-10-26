@@ -23,3 +23,11 @@ pedantic = "deny"
 
 [workspace.dependencies]
 # deps.
+geometry = { 
+  git = "https://github.com/SharedCode-UniTn-AP-2026/Common_Code-AP_2026.git", 
+  package = "ap-2026-common-code-geometry"
+}
+types = { 
+  git = "https://github.com/SharedCode-UniTn-AP-2026/Common_Code-AP_2026.git", 
+  package = "ap-2026-common-code-types"
+}

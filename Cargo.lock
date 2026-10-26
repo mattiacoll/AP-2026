@@ -7,12 +7,26 @@ name = "admirality"
 version = "0.1.0"
 
 [[package]]
+name = "ap-2026-common-code-geometry"
+version = "0.1.0"
+source = "git+https://github.com/SharedCode-UniTn-AP-2026/Common_Code-AP_2026.git#202022c202afe1557af49e1c9b039d8b99965573"
+
+[[package]]
+name = "ap-2026-common-code-types"
+version = "0.1.0"
+source = "git+https://github.com/SharedCode-UniTn-AP-2026/Common_Code-AP_2026.git#202022c202afe1557af49e1c9b039d8b99965573"
+
+[[package]]
 name = "cartographer"
 version = "0.1.0"
 
 [[package]]
 name = "chart"
 version = "0.1.0"
+dependencies = [
+ "ap-2026-common-code-geometry",
+ "ap-2026-common-code-types",
+]
 
 [[package]]
 name = "game"
