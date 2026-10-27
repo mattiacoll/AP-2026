@@ -51,11 +51,23 @@ use facade::{
 
 // Proposal
 pub struct Chart {
+    // seed: Seed,
     map: Map,
+    // ships: [Ship; 6],
+    // treasure: &Cell,
 }
 
 /// Protocol - 8
 impl Chart {
+    // fn island_place(&self, island: &Island, footprint: u32) -> Result<Map, GenError>;
+    // fn cliff_place(&self, cliff_n: u8) -> Result<Map, GenError>;
+    // fn rock_place(&self, rock_n: u16) -> Result<Map, GenError>;
+    // fn water_connected(&self) -> Result<Map, GenError>;
+    // fn treasure_place(&self) -> Result<Map, GenError>;
+    // fn clue_generate(&self, clue_n: u8) -> Clue;
+    // fn clue_assign(&self, island_id: IslandId, clue: &Clue);
+    // fn solvable(&self) -> Result<Map, GenError>;
+
     /// Main - 2.3 - How a sea is made
     pub fn generate(seed: Seed, params: &Params) -> Result<Chart, GenError> {
         // 1. Seed reproducible random generator from the generation stream (not wall clock).
